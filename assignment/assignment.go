@@ -1,25 +1,30 @@
 package assignment
 
+import(
+	services "bootcamp/service"
+)
+
 func AddUint32(x, y uint32) (uint32, bool) {
-	return 0, false
+
+	return services.AddUint32(x,y)
 }
 
 func CeilNumber(f float64) float64 {
-	return 0
+	return services.CeilNumber(f)
 }
 
 func AlphabetSoup(s string) string {
-	return ""
+	return services.SortString(s)
 }
 
 func StringMask(s string, n uint) string {
-	return ""
+	return services.MaskText(s, n)
 }
 
 func WordSplit(arr [2]string) string {
-	return ""
+	return services.WordsSplit(arr)
 }
 
-func VariadicSet(i ...interface{}) []interface{} {
-	return nil
+func VariadicSet(i interface{}) []interface{} {
+	return services.VariadicSet(i)
 }
